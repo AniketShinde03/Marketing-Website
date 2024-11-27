@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body, html {
+    height: 100%;
+}
+
+.bg-image {
+    background-color: #f1f1f3; /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /* Send it to the back */
+    filter: blur(3px); /* Optional: to blur the background */
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(136, 133, 133, 0.7); /* Transparent background */
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0px 10px 15px rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+}
+
+.login-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #9f9d9d;
+}
+
+#btn {
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #5a67d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #434190;
+}
+
+p {
+    font-size: 14px;
+    color: #d20a0a;
+}
+
+p a {
+    color: #171718;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <nav></nav>
+        <div class="navbar">
+        <ul>
+            <img src="assets/img/crownbg.png" alt="logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a>
+            </li>
+            <li><a href="services.html">Services</a>
+
+                
+            </li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+    </div>
+    </nav>
+    <div class="bg-image"></div> <!-- This is the background image -->
+
+    <div class="container">
+        <div class="icon-container">
+            <img src="assets/img/crownbg.png" alt="Icon" class="login-icon"> <!-- Login icon -->
+        </div>
+        <h2>Login</h2>
+
+        <form action="">
+            <div class="form-group">
+                <input type="email" required placeholder="Email">
+                
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="form-group">
+                <input type="password" required placeholder="Password">
+                
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <p><input type="checkbox">Remember Me <a href="#">Forget Password</a></p><br>
+
+            <input id="btn" type="submit" value="Login"><br>
+
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2024 Digital Marketing Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>

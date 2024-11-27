@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+   
+}
+
+
+.expertise-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.expertise-section h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    
+}
+
+.expertise-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.expertise-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.expertise-box:hover{
+    background-color: rgb(216, 205, 205);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(18, 18, 18);
+    text-align: center;
+    
+}
+
+.expertise-box img {
+    width: 60px;
+    margin-bottom: 20px;
+
+}
+.expertise-box img:hover {
+    
+    margin-bottom: 20px;
+
+}
+
+.expertise-box h3 {
+    font-size: 1.2rem;
+    color: #de8d2f;
+    margin-bottom: 15px;
+}
+
+.expertise-box p {
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .expertise-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav></nav>
+        <div class="navbar">
+        <ul>
+            <img src="assets/img/crownbg.png"alt="logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a>
+            </li>
+            <li><a href="services.html">Services</a>
+
+                
+            </li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+    </div>
+    </nav>
+    <section class="expertise-section">
+        <h2>Our <strong>Digital Marketing Expertise</strong></h2>
+        <div class="expertise-container">
+            <div class="expertise-box">
+                <img src="assets/img/seoicon.jpg" alt="SEO Icon">
+                <h3>Search Engine Optimization SEO</h3>
+                <p>Through careful keyword research and white hat practices, we can help you achieve high rankings in the major search engines.</p>
+            </div>
+            <div class="expertise-box">
+                <img src="assets/img/webdevicon.png" alt="Web Development Icon">
+                <h3>Website Design & Development</h3>
+                <p>With millions of websites on the internet, you want to be sure your website stands out, represents you well, and helps your organization grow.</p>
+            </div>
+            <div class="expertise-box">
+                <img src="assets/img/socialmarketingicon.png" alt="Social Media Marketing Icon">
+                <h3>Social Media Marketing</h3>
+                <p>Social media marketing is critical in staying connected with your audience. We help keep your social community engaged.</p>
+            </div>
+            <div class="expertise-box">
+                <img src="assets/img/ppcicon.png" alt="PPC Icon">
+                <h3>Pay Per Click  PPC</h3>
+                <p>Crown's PPC campaign ensures that the money you spend is put to the best possible use.</p>
+            </div>
+            <div class="expertise-box">
+                <img src="assets/img/videoproductionicon.png" alt="Video Production Icon">
+                <h3>Video Production</h3>
+                <p>Get your message across through video. Engage your audience by telling your story and sharing your mission.</p>
+            </div>
+            <div class="expertise-box">
+                <img src="assets/img/contentwritingicon.png" alt="Content Writing Icon">
+                <h3>Content Writing</h3>
+                <p>Our content writers know SEO and create great marketing copy to push your business objectives.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2024 Digital Marketing Agency. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
